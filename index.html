@@ -4,25 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
             clifford: '#da373d',
+            'text-color': '#424247',
+            'red-color':'#FF4240',
           }
         }
       }
     }
   </script>
+  <style>
+    .font-manrope{
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
 </head>
-<body>
-    <header>
-
+<body class="font-manrope">
+    <header class=" md:container mx-auto">
+        <nav class="lg:mx-32">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li>
+                        <a>About</a>
+                      </li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-4xl font-extrabold">Hockey<span class="text-[#FF4240]">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="text-[#FF4240]"><a>Home</a></li>
+                      <li>
+                        <a>About</a>
+                      </li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end flex">
+                  <div><i class="fa-solid fa-magnifying-glass text-gray-400 mr-6"></i></div>
+                  <div class=""><a class="btn bg-[#FF4240] text-white text-xl px-6 font-bold text-justify">Get Ticket</a></div>
+                </div>
+              </div>
+        </nav>
+        <section class="lg:mx-32 relative my-14">
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
+                <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a> 
+                <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
+                <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+              </div>
+            </div> 
+          </div>
+          <div class="bg-black text-white p-8 rounded-2xl lg:w-1/2 lg:absolute lg:bottom-8 lg:right-8 lg:mt-6">
+            <h2 class="font-extrabold text-2xl">Meet all the heroes from the field</h2>
+            <p class="font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. Dit amet consectetur.</p>
+          </div>
+        </section>
+        <section class="lg:mx-32 my-14">
+          <div class="text-center p-8">
+            <h2 class="text-3xl font-extrabold">Professional Hockeys Club</h2>
+            <p class="text-gray-400 mt-4 lg:mx-20">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          </div>
+          <div class="grid lg:grid-cols-4 grid-cols-1 text-center gap-8 p-8">
+            <div class="">
+              <div class="radial-progress text-primary mb-4" style="--value:87; color: red;" role="progressbar">87%</div>
+              <h2 class="text-xl font-semibold mb-4">Prayer Facility</h2>
+              <p class="text-sm text-gray-400">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class="">
+              <div class="radial-progress text-primary mb-4" style="--value:95; color: lightgreen;" role="progressbar">95%</div>
+              <h2 class="text-xl font-semibold mb-4">Experienced Coach</h2>
+              <p class="text-sm text-gray-400">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class="">
+              <div class="radial-progress text-primary mb-4" style="--value:90; color: gold;" role="progressbar">90%</div>
+              <h2 class="text-xl font-semibold mb-4">Senior Player</h2>
+              <p class="text-sm text-gray-400">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+            <div class="">
+              <div class="radial-progress text-primary mb-4" style="--value:80; color: hsl(236, 38%, 55%);" role="progressbar">80%</div>
+              <h2 class="text-xl font-semibold mb-4">Training Ground</h2>
+              <p class="text-sm text-gray-400">Amet consectetur. Condimentum dignissim adipiscing .</p>
+            </div>
+          </div>
+        </section>
     </header>
-    <main>
+    <main class="md:container mx-auto">
+      <section class="lg:mx-32 my-14">
+        <div class="text-center p-8">
+           <h2 class="text-3xl font-extrabold">Program Sections</h2>
+           <p class="text-gray-400 mt-4 lg:mx-20">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-8">
+            <div class="card image-full">
+              <figure><img src="Images/2.png" alt="" /></figure>
+              <div class="card-body lg:pt-24">
+                <h2 class="card-title text-white font-extrabold text-4xl">Junior Program</h2>
+                <p class="text-white text-base font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                  enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                <div class="">
+                  <button class="btn bg-[#FF4240] text-white text-xl px-6 font-bold text-justify border-0">Register Now!</button>
+                </div>
+              </div>
+          </div>
+            <div class="card image-full ">
+              <figure><img src="Images/3.png" alt="" /></figure>
+              <div class="card-body lg:pt-24">
+                <h2 class="card-title text-white font-extrabold text-4xl">Teenager Program</h2>
+                <p class="text-white text-base font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                  enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                <div class="">
+                  <button class="btn bg-[#FF4240] text-white text-xl px-6 font-bold text-justify border-0">Register Now!</button>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="mt-8">
+          <div class="card image-full">
+            <figure><img src="Images/4.png" alt="" /></figure>
+            <div class="card-body lg:pt-52">
+              <h2 class="card-title text-white font-extrabold text-4xl">Professional Program</h2>
+              <p class="lg:pr-64 text-white text-base font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+              <div class="">
+                <button class="btn bg-[#FF4240] text-white text-xl px-6 font-bold text-justify border-0">Register Now!</button>
+              </div>
+            </div>
+        </div>
+        </div>
+      </section>
 
     </main>
     <footer>
